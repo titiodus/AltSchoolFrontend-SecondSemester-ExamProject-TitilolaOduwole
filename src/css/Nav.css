@@ -1,0 +1,17 @@
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #EEE;
+    overflow: hidden;
+/*     height: 80px; */
+    width: 100%;
+}
+
+.nav-link {
+  font-size: 20px;
+  text-decoration: none;
+  text-shadow: -3px 0px 8px rgba(0,0,0,0.6);
+  color: black;
+  padding: 10px 0 10px 10px;
+}

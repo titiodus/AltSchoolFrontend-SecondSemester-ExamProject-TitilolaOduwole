@@ -1,0 +1,21 @@
+body { 
+width: 100%;
+background-image: linear-gradient(to right, #EEE, #EC4534);
+}
+.mycard {
+  overflow:hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 200px;
+  
+}
+
+/* img {
+  width: 100%;
+} */
+
+.card-top {
+  
+}
+

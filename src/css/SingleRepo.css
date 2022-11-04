@@ -1,0 +1,21 @@
+.repo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.singlerepo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.repo-count {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.li-item {
+  list-style: none;
+}

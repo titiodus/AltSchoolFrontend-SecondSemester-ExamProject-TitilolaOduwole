@@ -1,0 +1,41 @@
+.repos-text {
+  font-size: 24px;
+  margin: 25px;
+  border-bottom: 1px solid #ec4534;
+}
+
+.repos-card {
+  background: #eee;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 8px auto;
+  box-shadow: 8px 10px 39px 0px rgba(130,70,70,0.75);
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+repos-info {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.outer-btns {
+  padding: 12px 18px;
+}
