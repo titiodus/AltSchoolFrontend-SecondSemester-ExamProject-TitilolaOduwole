@@ -1,6 +1,7 @@
 import Navigation from "../components/Navigation.jsx";
 import '../css/Mygithub.css';
 import useFetch from '../hook/useFetch.jsx';
+import { Helmet } from 'react-helmet-async';
 
 export default function MyGithub() {
     const url = "https://api.github.com/users/titiodus"
@@ -11,6 +12,10 @@ export default function MyGithub() {
   return (
     <>
         <div>
+        <Helmet>
+          <title>Github Profile using API</title>
+          <meta name='description' content='Retreiving Github profile data using API.' type='section' />
+        </Helmet>  
             <Navigation />
         </div>
         <div className="mycard">

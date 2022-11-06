@@ -1,6 +1,7 @@
-import {useLocation} from "react-router-dom"
-import { format } from "date-fns"
-import '../css/SingleRepo.css'
+import {useLocation} from "react-router-dom";
+import { format } from "date-fns";
+import '../css/SingleRepo.css';
+import { Helmet } from 'react-helmet-async';
 
 export default function Repo(){
   const myRepos = useLocation()
@@ -9,6 +10,10 @@ export default function Repo(){
 return <>
   
 <article className="repo-container">
+<Helmet>
+          <title>Github Profile using API</title>
+          <meta name='description' content='Showing a single repository with nested route using API.' type='article' />
+        </Helmet> 
     <div>
       <img  src={details.owner.avatar_url} alt={details.owner.login} className="profile-img"/>
        <div className='repo-about'>

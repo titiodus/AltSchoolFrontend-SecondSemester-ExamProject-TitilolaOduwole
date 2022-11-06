@@ -1,8 +1,9 @@
 import { Link, Outlet } from 'react-router-dom'
-import Navigation from '../components/Navigation.jsx'
+import Navigation from '../components/Navigation.jsx';
 import '../css/ReposPage.css';
 import { useState } from "react";
-import useFetch from "../hook/useFetch.jsx"
+import useFetch from "../hook/useFetch.jsx";
+import { Helmet } from 'react-helmet-async';
 
 
 export default function ReposPage() {
@@ -17,6 +18,10 @@ export default function ReposPage() {
   return <>
     
     <main>
+    <Helmet>
+          <title>Github repositories using API</title>
+          <meta name='description' content='Retreiving Github repositories using API.' type='main' />
+        </Helmet> 
     <Navigation />
     <p className='repos-text'>Repositories</p>
         {data && data.map(details=><li key={details.id} className="repos-card">

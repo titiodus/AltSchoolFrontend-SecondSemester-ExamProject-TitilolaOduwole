@@ -1,5 +1,6 @@
 import './App.css';
 import './css/Nav.css';
+import { HelmetProvider } from 'react-helmet-async'
 import { Routes, Route} from 'react-router-dom';
 import MyGithub from './Pages/Mygithub.jsx';
 import ReposPage from './Pages/ReposPage.jsx'
@@ -14,6 +15,7 @@ export default function App() {
   
   return <>
     <ErrorBoundary FallbackComponent={ErrorFallback}> 
+    <HelmetProvider>  
     <Routes>
       <Route path='/' element={<MyGithub />} />
       <Route path='repositories' element={<ReposPage />}>
@@ -23,6 +25,7 @@ export default function App() {
       <Route path='testerror' element={<TestError />} />
       <Route path='*' element={<Err404 />} />
     </Routes>
+    </HelmetProvider>  
     </ErrorBoundary>
   </>
     
