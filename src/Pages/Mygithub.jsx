@@ -1,10 +1,8 @@
 import Navigation from "../components/Navigation.jsx";
 import '../css/Mygithub.css';
-import { useState } from 'react';
 import useFetch from '../hook/useFetch.jsx';
 
 export default function MyGithub() {
-    const [page, setPage] = useState();
     const url = "https://api.github.com/users/titiodus"
     const {loading,data}=useFetch(url)
     console.log(data)
@@ -17,7 +15,7 @@ export default function MyGithub() {
         </div>
         <div className="mycard">
           <section className='card'>
-            <img src={data.avatar_url} alt='A smiling Titi' />
+            <img className="profile-img" src={data.avatar_url} alt='A smiling Titi' />
             <div className='card-top'>
               <h3>{data.name}</h3>
               <p>{data.bio}</p>

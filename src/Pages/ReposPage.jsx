@@ -1,13 +1,11 @@
 import { Link, Outlet } from 'react-router-dom'
 import Navigation from '../components/Navigation.jsx'
 import '../css/ReposPage.css';
-import { useState, useEffect } from "react";
-import { useErrorHandler } from "react-error-boundary"
+import { useState } from "react";
 import useFetch from "../hook/useFetch.jsx"
 
 
 export default function ReposPage() {
-  const [repos, setRepos] = useState([]);
   const [page, setPage] = useState()
 
   const total = 6
@@ -32,7 +30,7 @@ export default function ReposPage() {
 }</p>
           </div>
           
-        <Link to="singlerepo" state={{details: details }}>See more...</Link>
+        <Link className='repo-more' to="singlerepo" state={{details: details }}>See more...</Link>
         </li>
           )}
         <div className='buttons'>

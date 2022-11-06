@@ -11,11 +11,14 @@ background-image: linear-gradient(to right, #EEE, #EC4534);
   
 }
 
-/* img {
-  width: 100%;
-} */
+img {
+  width: 70%;
+  display: block;
+  border-radius: 10px;
+}
 
 .card-top {
-  
+  border-top: 1px solid #ec4354;
+  margin-top: 25px;
 }
 
