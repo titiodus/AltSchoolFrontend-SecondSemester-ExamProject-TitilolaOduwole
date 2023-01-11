@@ -14,31 +14,33 @@ return <>
           <title>Github Profile using API</title>
           <meta name='description' content='Showing a single repository with nested route using API.' type='article' />
         </Helmet> 
+  <div>
     <div>
-      <img  src={details.owner.avatar_url} alt={details.owner.login} className="profile-img"/>
-       <div className='repo-about'>
+      <img  src={details.owner.avatar_url} alt={details.owner.login} className="singlerepo-img"/>
+    </div>  
+        <div className="dt-container">
+          <p className="date-info">
+              This repository was created on{" "}
+              {format(new Date(details.created_at), "dd MMMM yyyy")} by{" "}
+              {details.owner.login}
+            </p>
+         
+        </div>
+    
+        <div className="txt-container"> 
           <p>{details.name}</p>
            <a
             className="text-sm"
             href={details.html_url}
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer" 
           >
             View Repo
           </a>
         </div>
-        <ul>
-          <li>
-            <p className="date-info">
-              This repository was created on{" "}
-              {format(new Date(details.created_at), "dd MMMM yyyy")} by{" "}
-              {details.owner.login}
-            </p>
-          </li> 
-        </ul>
-    </div>
+    
         
-        <div>
+        <div className="li-container">
           <ul className='repo-state'>
             <li className='li-item'>{details.language}</li>
              <li className='li-item'>
@@ -54,8 +56,8 @@ return <>
           </ul>
         </div>
         
-      
-  </article>
+  </div>  
+</article>
 </>
   
 }

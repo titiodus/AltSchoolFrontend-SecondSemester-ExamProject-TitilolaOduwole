@@ -3,6 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom: 2px solid #ec4354;
+  border-top: 2px solid #ec4354; 
+  margin: 20px 0;
 }
 
 .repo-count,
@@ -14,6 +17,16 @@
   align-items: center;
 }
 
+.txt-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.date-info {
+  text-align: center;
+}
+
 .li-item {
   list-style: none;
   margin-left: 10px;
@@ -21,4 +34,18 @@
 
 .text-sm {
   text-decoration: none;
+  border: 1px solid #545e6f;
+  border-radius: 3px;
+  padding: 3px 5px;
+  background: #ec4354;
+}
+
+.dt-container,
+.txt-container,
+.li-container {
+  border-bottom: 1px solid #ec4354;
+}
+
+.singlerepo-img {
+  margin-top: 20px;
 }

@@ -11,7 +11,7 @@ export default function MyGithub() {
     
   return (
     <>
-        <div>
+        <div className="nav-container">
         <Helmet>
           <title>Github Profile using API</title>
           <meta name='description' content='Retreiving Github profile data using API.' type='section' />
@@ -22,17 +22,17 @@ export default function MyGithub() {
           <section className='card'>
             <img className="profile-img" src={data.avatar_url} alt='A smiling Titi' />
             <div className='card-top'>
-              <h3>{data.name}</h3>
-              <p>{data.bio}</p>
+              <p className="git-bio">{data.bio}</p>
+              <p className="git-name">{data.name}</p> 
             </div>
             <div>
-              <p>{data.followers} followers</p>
+              <p className="git-followers">{data.followers} followers</p>
             </div>
             <div>
-              <p>{data.following} following</p>
+              <p className="git-following">{data.following} following</p>
             </div>
             <div>
-              <p>{data.public_repos} Repositories</p>
+              <p className="git-repos">{data.public_repos} Repositories</p>
             </div>
           </section>
         </div>

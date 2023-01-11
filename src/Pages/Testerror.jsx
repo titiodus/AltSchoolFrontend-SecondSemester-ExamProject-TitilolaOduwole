@@ -10,12 +10,12 @@ export default function TestError(){
     if(food === 'egusi') {
       throw new Error('You no dey hear word, Abi!')
     } else {
-      return `My favourite is ${food}`
+      return `My favourite food is ${food}`
     }
   }
   return <>
     <Navigation />
-    <input value={food} type='text' placeholder="Do not enter egusi" onChange={(e)=>setFood(e.target.value)} />
+    <input value={food} type='text' className="input-food" placeholder="Do not enter egusi" onChange={(e)=>setFood(e.target.value)} />
     <ErrorBoundary FallbackComponent={ErrorFallback} onReset={()=>setFood('')} resetKeys={[food]}>
       <FoodError className='food' food={food} />
     </ErrorBoundary>

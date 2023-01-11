@@ -2,10 +2,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #EEE;
     overflow: hidden;
-/*     height: 80px; */
-    width: 100%;
+    width: 100%
 }
 
 .nav-link {
