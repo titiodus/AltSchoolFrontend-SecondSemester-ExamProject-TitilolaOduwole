@@ -11,7 +11,7 @@ I implement proper SEO, Error Boundary (I created a page to test the error bound
 
 Good UI and Designs, if I may say so myself. 
 
-This project is hosted on vercel [GithubProject](https://alt-school-frontend-second-semester-exam-project-m3shijy8c.vercel.app/)
+This project is hosted on vercel [GithubProject](https://alt-school-frontend-second-semester-exam-project-c6ovamhfr.vercel.app/)
 
 
 
